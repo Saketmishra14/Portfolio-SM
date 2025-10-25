@@ -11,7 +11,7 @@ const experiences = [
   {
     id: "1",
     company: "Dial For Web LLC",
-    role: "Web Development/IT(as per project requirement)",
+    role: "Web Development/IT",
     type: "Intern",
     location: "Remote",
     startDate: "13/09/2025",

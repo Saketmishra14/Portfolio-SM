@@ -52,7 +52,7 @@ const ProjectSection = () => {
           <ArrowRightRounded fontSize="large" />
         </div>
         <div
-          className="px-5 py-7 flex justify-center overflow-x-scroll no-scrollbar"
+          className="px-5 py-7 flex justify-start lg:justify-center overflow-x-scroll no-scrollbar"
           ref={projectContainer}
         >
           <ProjectCard
