@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react";
 import LayoutWithHeader from "./LayoutWithHeader";
 import { Toaster } from "react-hot-toast";
+import {  HelmetProvider } from 'react-helmet-async';
+
 
 function App() {
   const [isdarkMode, setIsDarkMode] = useState(false);
@@ -40,7 +42,7 @@ function App() {
         >
           <ArrowUpward />
         </div>
-
+      <HelmetProvider>
         <Routes>
           {/* With header routes */}
             <Route element={<LayoutWithHeader setDark={setIsDarkMode} currentMode={isdarkMode} />}>
@@ -48,10 +50,12 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
           </Route>
+          
 
           {/* Without header routes */}
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
+        </HelmetProvider>
 
         <Footer />
       </div>
