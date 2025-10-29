@@ -42,7 +42,7 @@ function App() {
         >
           <ArrowUpward />
         </div>
-      
+      <HelmetProvider>
         <Routes>
           {/* With header routes */}
             <Route element={<LayoutWithHeader setDark={setIsDarkMode} currentMode={isdarkMode} />}>
@@ -55,6 +55,7 @@ function App() {
           {/* Without header routes */}
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
+        </HelmetProvider>
         
 
         <Footer />
