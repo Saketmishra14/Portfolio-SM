@@ -1,8 +1,4 @@
-# robots.txt for Saket Mishra Portfolio
-
 User-agent: *
 Allow: /
-Disallow:
 
-# Sitemap (replace with your actual sitemap URL)
-Sitemap: https://portfolio-sm-nine.vercel.app/
+Sitemap: https://portfolio-sm-nine.vercel.app/sitemap.xml
