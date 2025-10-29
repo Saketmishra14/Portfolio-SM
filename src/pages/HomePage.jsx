@@ -21,12 +21,11 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Saket Mishra</title>
+       <title>Saket Mishra</title>
         <meta
           name="description"
-          content="The portfolio of Saket Mishra. Where I showed my all relevent skills, experiances and blogs and all the other stuffs of me as a developer"
+          content="The portfolio of Saket Mishra. Where I showed my all relevent skills, experiances, blogs, videos and all the other stuffs of me as a developer"
         />
-       
       </Helmet>
 
       {isLoading?(<Preloader/>) :(
