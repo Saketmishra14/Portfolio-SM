@@ -1,5 +1,5 @@
 import { GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
-import heroImage2 from "../assets/profile-img.jpeg";
+import heroImage2 from "../assets/heroImage-2.webp";
 import { useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -122,7 +122,8 @@ const HeroSection = () => {
         <img
           ref={profileRef}
           src={heroImage2}
-          alt="profile"
+          rel="preload"
+          alt="Saket Mishra Mern-Developer profile"
           className="col-start-1 row-start-1  h-96 lg:h-[500px] rounded-full transition-transform duration-300"
         />
       </div>

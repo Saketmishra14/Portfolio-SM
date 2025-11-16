@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Star } from "@mui/icons-material";
 
 const TweetEmbed = ({ tweetId }) => {
   return (

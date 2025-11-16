@@ -12,6 +12,7 @@ const EventSection = () => {
     <div className="mt-28" data-aos="zoom-in">
       <div className="w-full">
         <img
+        loading="lazy"
           src={HACK_EVENT_IMG}
           alt="google cloud event image"
           className="w-full h-[200px] lg:h-[400px] object-cover object-center"

@@ -1,6 +1,6 @@
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
-import ProfileIMG from "../assets/profile-img.jpeg";
+import ProfileIMG from "../assets/profile-img.webp";
 
 const Header = ({ setDark, currentMode }) => {
   const changeMode = () => {
@@ -14,7 +14,8 @@ const Header = ({ setDark, currentMode }) => {
       <div className="flex flex-row items-center space-x-6 cursor-pointer" onClick={() => {navigate("/")}}>
         <img
           src={ProfileIMG}
-          alt="profile"
+          alt="Saket Mishra Web-developer"
+          loading="lazy"
           className="lg:w-10 lg:h-10 w-7 h-7 object-cover rounded-full object-top"
         />
         <p className="font-bold font-poppins sm:text-xl text-lg dark:text-white">

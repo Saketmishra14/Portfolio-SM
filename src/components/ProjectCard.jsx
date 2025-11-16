@@ -27,7 +27,7 @@ const ProjectCard = ({
       <div className=" w-full ">
         <img
           src={imgUrl}
-          alt="netflix clone"
+          alt="mannylandscaping website"
           className="rounded-t-md border-b border-gray-200 dark:border-gray-700 lg:h-44 w-full h-20 object-cover"
           loading="lazy"
         />

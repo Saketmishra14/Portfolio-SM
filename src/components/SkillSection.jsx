@@ -52,12 +52,7 @@ const SkillSection = () => {
           ]}
         />
 
-        {/* <SkillBox
-          title="AI/ML Skills"
-          skills={[
-            { skill: "langchain", level: "50%", label:"Langchain" },
-          ]}
-        /> */}
+       
 
         <SkillBox
           title="Cloud Skills"

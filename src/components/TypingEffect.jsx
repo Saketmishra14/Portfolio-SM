@@ -1,14 +1,5 @@
 import { useEffect, useState } from "react";
 
-// let tagIndex = 0;
-
-// const typeingFun = () => {
-//   tagLists[tagIndex].split("").map((c) => {
-//     // setTimeout(() => setTag(...tag, c), 2000);
-//     setTag((c) => tag + c);
-//   });
-// };
-
 const useTypewriter = (text, speed = 50) => {
   const [displayText, setDisplayText] = useState("");
 

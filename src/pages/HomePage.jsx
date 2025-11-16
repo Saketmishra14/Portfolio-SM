@@ -34,7 +34,6 @@ const HomePage = () => {
 
       <TransportationRow />
 
-      {/* <ExperianceSection /> */}
 
       <ExperienceNew />
 
@@ -43,9 +42,6 @@ const HomePage = () => {
       <SkillSection />
 
       <SocialPostsSection />
-
-      {/* <WhatCanIDo /> */}
-
 
       <EventSection />
 

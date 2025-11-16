@@ -1,5 +1,3 @@
-import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
-import banner from "../assets/projects-page-banner.png";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 import { useState } from "react";
