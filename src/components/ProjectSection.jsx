@@ -5,7 +5,8 @@ import {
 } from "@mui/icons-material";
 import ProjectCard from "./ProjectCard";
 import mannylandscaping from "../assets/projectCovers/Manny'slandscaping.png";
-import codeCasingCover from "../assets/projectCovers/CodeCasing.jpg";
+import codeFrameCover from "../assets/codeframe-banner.png";
+import linkMeetCover from '../assets/linkmeet-banner.png'
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -62,15 +63,26 @@ const ProjectSection = () => {
             sourceLink="https://github.com/Saketmishra14/mannylandscaping-final"
             techStacks={[ "html5","css3","javascript","bootstrap"]}
             status={"completed"}
+            liveLink="https://saketmishra14.github.io/mannylandscaping-final"
           />
           
           <ProjectCard
-            imgUrl={codeCasingCover}
+            imgUrl={codeFrameCover}
             title="Code Image Genrator"
             desp="CodeCasing is a code to image generator app. You just have to give the code and your will get an customizable image in return."
             sourceLink="https://github.com/Saketmishra14/Code-Frame"
             techStacks={["html5", "css3", "javascript"]}
             status={"Completed"}
+            liveLink="https://saketmishra14.github.io/Code-Frame"
+          />
+          <ProjectCard
+            imgUrl={linkMeetCover}
+            title="Link_Meet"
+            desp="Link-Meet is a real-time video conferencing web app inspired by Zoom, allowing users to join meetings via secure links with live video, audio, and chat using WebRTC and modern web technologies."
+            sourceLink="https://github.com/Saketmishra14/Link_Meet"
+            techStacks={["css3", "javascript","express","mongodb","reactjs"]}
+            status={"Completed"}
+            liveLink="https://linkmeet-ymkj.onrender.com"
           />
         </div>
       </div>
