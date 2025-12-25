@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/mishrasaket_14/" target="_blank">
               Instagram
             </a>
-            <a href="https://www.linkedin.com/in/saket-mishra-5075aa2a6/" target="_blank">
+            <a href="https://www.linkedin.com/in/saketmishra14" target="_blank">
               LinkedIn
             </a>
             <a href="https://hashnode.com/@yashmishra14" target="_blank">

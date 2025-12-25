@@ -93,7 +93,7 @@ const HeroSection = () => {
             <GitHub fontSize="large" className="bg-white rounded-full" />
           </a>
           <a
-            href="https://www.linkedin.com/in/saket-mishra-5075aa2a6/"
+            href="https://www.linkedin.com/in/saketmishra14/"
             target="_blank"
             title="Linkedin"
           >

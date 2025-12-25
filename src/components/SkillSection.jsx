@@ -22,7 +22,7 @@ const SkillSection = () => {
             { skill: "html5", level: "95%", label: "HTML" },
             { skill: "css3", level: "90%", label: "CSS" },
             { skill: "reactjs", color: "#000eaa", level: "75%", label:"React.js" },
-            { skill: "tailwindcss", level: "70%", label:"Tailwind CSS" },
+            { skill: "tailwindcss", level: "60%", label:"Tailwind CSS" },
             { skill: "materialui", level: "70%", label:"Material UI" },
             { skill: "styled-components", level: "80%", label:"Styled Components" },
             { skill: "redux", level: "55%", label:"Redux" },
