@@ -69,7 +69,7 @@ const ProjectSection = () => {
           <ProjectCard
             imgUrl={codeFrameCover}
             title="Code Image Genrator"
-            desp="CodeFrame is a code to image generator app. You just have to give the code and your will get an customizable image in return."
+            desp="CodeFrame is a code to image generator app. You just have to give the code and you will get an customizable image in return."
             sourceLink="https://github.com/Saketmishra14/Code-Frame"
             techStacks={["html5", "css3", "javascript"]}
             status={"Completed"}
