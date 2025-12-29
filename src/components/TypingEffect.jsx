@@ -33,7 +33,7 @@ const useTypewriter = (text, speed = 50) => {
 
 const TypingEffect = () => {
   //   const [tag, setTag] = useState("font end developer");
-  const displayText = useTypewriter("M ERN stack developer", 200);
+  const displayText = useTypewriter("F ull stack developer", 200);
 
   //   const tagLists = [
   //     "Frontend developer",

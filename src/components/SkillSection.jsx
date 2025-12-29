@@ -21,10 +21,11 @@ const SkillSection = () => {
           skills={[
             { skill: "html5", level: "95%", label: "HTML" },
             { skill: "css3", level: "90%", label: "CSS" },
+            { skill: "sass", level: "80%", label: "Syntactically Awesome Style Sheets (SASS)"},
             { skill: "reactjs", color: "#000eaa", level: "75%", label:"React.js" },
             { skill: "tailwindcss", level: "60%", label:"Tailwind CSS" },
             { skill: "materialui", level: "70%", label:"Material UI" },
-            { skill: "styled-components", level: "80%", label:"Styled Components" },
+            // { skill: "styled-components", level: "80%", label:"Styled Components" },
             { skill: "redux", level: "55%", label:"Redux" },
             { skill: "bootstrap", level: "65%", label:"Bootstrap" },
           ]}

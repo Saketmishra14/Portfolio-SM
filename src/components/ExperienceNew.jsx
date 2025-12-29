@@ -9,14 +9,34 @@ import { useEffect } from "react";
 
 const experiences = [
   {
-    id: "1",
+  id: "3",
+  company: "CodeTechLab",
+  role: "SEO Analyst",
+  type: "Intern",
+  location: "On-site",
+  startDate: "29/12/2025",
+  endDate: undefined,
+  current: true,
+  description:
+    "Working as an SEO Analyst Intern with the digital marketing team. Responsible for keyword research, on-page SEO optimization, off-page SEO activities, and analyzing website performance to improve search engine rankings and organic traffic.",
+  techStack: [
+    "Keyword Research",
+    "On-page SEO",
+    "Off-page SEO",
+    "technical seo",
+    "Google Analytics",
+    "Google Search Console",
+  ],
+},
+  {
+    id: "2",
     company: "Dial For Web LLC",
     role: "Web Development/IT",
     type: "Intern",
     location: "Remote",
     startDate: "13/09/2025",
-    endDate: undefined,
-    current: true,
+    endDate: "13/12/2025",
+    current: false,
     description:
       "I will be actively involved in live projects, guided assignments,and collaborative activities.",
     techStack: [
@@ -30,13 +50,13 @@ const experiences = [
     ],
   },
   {
-    id: "2",
+    id: "1",
     company: "VG IT Solutions",
     role: "MERN Stack Developer",
     type: "Intern",
     location: "Hybrid",
     startDate: "15/09/2025",
-    endDate: undefined,
+    endDate: "20/12/2025",
     current: false,
     description:
       "Working as a MERN stack developer intern. Working on both frontend and backend of the project and some internal tools of the company.Training will focused on the MERN stack.",
@@ -48,6 +68,7 @@ const experiences = [
       "nodejs",
     ],
   },
+
 ];
 
 const ExperienceNew = () => {
