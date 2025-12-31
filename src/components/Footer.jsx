@@ -46,7 +46,7 @@ const Footer = () => {
               Touch Typing
             </a>
             <a
-              href="https://codago.hashnode.dev/git-and-github-introduction"
+              href=""
               target="_blank"
             >
               Git and GitHub: Introduction
