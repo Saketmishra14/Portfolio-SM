@@ -8,26 +8,27 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const experiences = [
-  {
-  id: "3",
-  company: "CodeTechLab",
-  role: "SEO Analyst",
-  type: "Intern",
-  location: "On-site",
-  startDate: "29/12/2025",
-  endDate: undefined,
-  current: true,
-  description:
-    "Working as an SEO Analyst Intern with the digital marketing team. Responsible for keyword research, on-page SEO optimization, off-page SEO activities, and analyzing website performance to improve search engine rankings and organic traffic.",
-  techStack: [
-    "Keyword Research",
-    "On-page SEO",
-    "Off-page SEO",
-    "technical seo",
-    "Google Analytics",
-    "Google Search Console",
-  ],
-},
+ {
+    id: "3",
+    company: "Dial For Web LLC",
+    role: "Software Engineer",
+    type: "Intern",
+    location: "Remote",
+    startDate: "14/12/2025",
+    endDate: undefined,
+    current: true,
+    description:
+      "I will be actively involved in live projects, guided assignments,and collaborative activities.",
+    techStack: [
+      "reactjs",
+      "Expressjs",
+      "tailwindcss",
+      "redux",
+      "css3",
+      "javascript",
+      "nodejs"
+    ],
+  },
   {
     id: "2",
     company: "Dial For Web LLC",

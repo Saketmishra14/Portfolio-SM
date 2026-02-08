@@ -10,6 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 import LayoutWithHeader from "./LayoutWithHeader";
 import { Toaster } from "react-hot-toast";
 import {  HelmetProvider } from 'react-helmet-async';
+import BlogPage from "./pages/BlogPage";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/blog" element={<BlogPage/>}/>
           </Route>
           
 

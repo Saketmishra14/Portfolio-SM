@@ -16,7 +16,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/saketmishra14" target="_blank">
               LinkedIn
             </a>
-            <a href="https://hashnode.com/@yashmishra14" target="_blank">
+            <a href="https://yashmishra.hashnode.dev/" target="_blank">
               Hashnode
             </a>
             <a href="https://www.youtube.com/@yash4two" target="_blank">
@@ -46,7 +46,7 @@ const Footer = () => {
               Touch Typing
             </a>
             <a
-              href=""
+              href="https://yashmishra.hashnode.dev/git-and-github-introduction"
               target="_blank"
             >
               Git and GitHub: Introduction
