@@ -18,7 +18,7 @@ const experiences = [
     endDate: undefined,
     current: true,
     description:
-      "I will be actively involved in live projects, guided assignments,and collaborative activities.",
+      "I am committed to mastering new frameworks through live project execution, mentorship-led assignments, and active knowledge-sharing within collaborative ecosystems.",
     techStack: [
       "reactjs",
       "Expressjs",

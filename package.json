@@ -21,7 +21,10 @@
     "@mui/material": "^5.14.14",
     "@vercel/analytics": "^1.3.1",
     "aos": "^2.3.4",
+    "bcryptjs": "^3.0.3",
+    "crypto-js": "^4.2.0",
     "gsap": "^3.13.0",
+    "lucide-react": "^0.575.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -30,7 +33,8 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^6.17.0",
     "react-tweet": "^3.2.2",
-    "react-twitter-embed": "^4.0.4"
+    "react-twitter-embed": "^4.0.4",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

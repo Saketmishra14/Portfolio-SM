@@ -36,6 +36,9 @@ const Header = ({ setDark, currentMode }) => {
         <a href="/blog" className=" hover:border-b border-blue-700">
           Blogs
         </a>
+         <Link to="/tool" className=" hover:border-b border-blue-700">
+         Tools
+        </Link>
       </div>
 
       <div className="flex items-center space-x-4">

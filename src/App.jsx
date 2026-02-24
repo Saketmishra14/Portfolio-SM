@@ -11,6 +11,11 @@ import LayoutWithHeader from "./LayoutWithHeader";
 import { Toaster } from "react-hot-toast";
 import {  HelmetProvider } from 'react-helmet-async';
 import BlogPage from "./pages/BlogPage";
+import DeveloperToolPage from "./pages/DeveloperToolPage";
+import TokenGenerator from "./components/developerTool/TokenGenerator";
+import HashTextTool from "./components/developerTool/HashTextTool";
+import BcryptTool from "./components/developerTool/BcryptTool";
+import UuidGenerator from "./components/developerTool/UuidGenerator";
 
 
 function App() {
@@ -50,6 +55,12 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/blog" element={<BlogPage/>}/>
+            <Route path="/Tool" element={<DeveloperToolPage/>}/>
+            <Route path="/Tool/token-generator" element={<TokenGenerator/>}/>
+            <Route path="/Tool/hash-text" element={<HashTextTool/>}/>
+            <Route path="/Tool/bcrypt" element={<BcryptTool/>}/>
+            <Route path="/Tool/uuid-generator" element={<UuidGenerator/>}/>
+            
           </Route>
           
 
@@ -57,8 +68,6 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
         </HelmetProvider>
-        
-
         <Footer />
       </div>
     </div>

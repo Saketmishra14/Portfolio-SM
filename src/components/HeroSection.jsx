@@ -1,6 +1,7 @@
 import { GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import heroImage2 from "../assets/heroImage-2.webp";
 import { useEffect, useRef } from "react";
+import { SiSalesforce } from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/BlinkEffect.css";
@@ -106,6 +107,13 @@ const HeroSection = () => {
             title="Instagram"
           >
             <Instagram fontSize="large" className="text-pink-600" />
+          </a>
+          <a
+            href="https://www.salesforce.com/trailblazer/saketmishra14"
+            target="_blank"
+            title="Salesforce"
+          >
+            <SiSalesforce size={36} color="#00A1E0" />
           </a>
 
           <Link
