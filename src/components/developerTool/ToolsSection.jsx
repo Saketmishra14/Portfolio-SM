@@ -28,6 +28,7 @@ const tools = [
     icon: <Fingerprint size={24} /> 
 },
   { title: "ULID generator",
+    slug: "ulid-generator",
      desc: "Generate random Universally Unique Lexicographically Sortable Identifier...", 
      icon: <SortAsc size={24} />
      },

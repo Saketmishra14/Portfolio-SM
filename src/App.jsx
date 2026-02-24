@@ -16,6 +16,7 @@ import TokenGenerator from "./components/developerTool/TokenGenerator";
 import HashTextTool from "./components/developerTool/HashTextTool";
 import BcryptTool from "./components/developerTool/BcryptTool";
 import UuidGenerator from "./components/developerTool/UuidGenerator";
+import UlidGenerator from "./components/developerTool/UlidGenerator";
 
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
             <Route path="/Tool/hash-text" element={<HashTextTool/>}/>
             <Route path="/Tool/bcrypt" element={<BcryptTool/>}/>
             <Route path="/Tool/uuid-generator" element={<UuidGenerator/>}/>
+            <Route path="/Tool/ulid-generator" element={<UlidGenerator/>}/>
             
           </Route>
           
