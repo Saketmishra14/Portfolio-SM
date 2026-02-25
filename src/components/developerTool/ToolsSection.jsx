@@ -33,15 +33,18 @@ const tools = [
      icon: <SortAsc size={24} />
      },
   { title: "Encrypt / decrypt text",
+    slug: "encryption",
      desc: "Encrypt clear text and decrypt ciphertext using crypto algorithms like...", 
      icon: <ShieldCheck size={24} /> 
     },
   { title: "BIP39 passphrase generator", 
+    slug: "bip39-generator",
     desc: "Generate a BIP39 passphrase from an existing or random mnemonic, or get...", 
     icon: <List size={24} /> 
 },
-  { title: "Hmac generator", 
-    desc: "Computes a hash-based message authentication code (HMAC) using a...", 
+  { title: "Password strength analyser", 
+    slug: "password-strength-analyser",
+    desc: "Discover the strength of your password with this client-side-only password strength analyser and crack time estimation tool.", 
     icon: <Key size={24} /> 
 },
 ];

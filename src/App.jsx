@@ -17,6 +17,9 @@ import HashTextTool from "./components/developerTool/HashTextTool";
 import BcryptTool from "./components/developerTool/BcryptTool";
 import UuidGenerator from "./components/developerTool/UuidGenerator";
 import UlidGenerator from "./components/developerTool/UlidGenerator";
+import EncryptDecryptTool from "./components/developerTool/EncryptDecryptTool"
+import BIP39Generator from "./components/developerTool/Bip39GeneratorTool";
+import PasswordStrengthAnalyzer from "./components/developerTool/PasswordStrengthAnalyzer";
 
 
 function App() {
@@ -62,6 +65,9 @@ function App() {
             <Route path="/Tool/bcrypt" element={<BcryptTool/>}/>
             <Route path="/Tool/uuid-generator" element={<UuidGenerator/>}/>
             <Route path="/Tool/ulid-generator" element={<UlidGenerator/>}/>
+            <Route path="/Tool/encryption" element={<EncryptDecryptTool/>}/>
+            <Route path="/Tool/bip39-generator" element={<BIP39Generator/>}/>
+            <Route path="/Tool/password-strength-analyser" element={<PasswordStrengthAnalyzer/>}/>
             
           </Route>
           
