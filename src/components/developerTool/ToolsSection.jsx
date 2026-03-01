@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   Shuffle, Hash, Lock, Fingerprint,EyeOff, 
-  SortAsc, ShieldCheck, List, Key, Heart 
+  SortAsc, ShieldCheck, List, Key, Heart,FileUp 
 } from 'lucide-react';
 import { Link } from 'react-router-dom'; // Import Link
 
@@ -47,6 +47,11 @@ const tools = [
     desc: "Discover the strength of your password with this client-side-only password strength analyser and crack time estimation tool.", 
     icon: <Key size={24} /> 
 },
+  { title: "PDF Signature Checker", 
+    slug: "pdf-signature-checker",
+    desc: "Verify the signatures of a PDF file. A signed PDF file contains one or more signatures that may be used to determine whether the contents of the file have been altered since the file was signed.", 
+    icon: <FileUp size={24} /> 
+},
 ];
 
 const ToolGrid = () => {
@@ -58,7 +63,7 @@ const ToolGrid = () => {
           All the tools
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 ">
           {tools.map((tool, index) => (
             /* Wrapped in Link for SPA navigation */
             <Link 

@@ -1,7 +1,6 @@
 import DeveloperToolHero from '../components/developerTool/HeroSection'
-import ToolsSection from '../components/developerTool/ToolsSection'
 import { Helmet } from "react-helmet";
-import React from 'react'
+import ToolsPageLayout from '../components/developerTool/ToolsPageLayout';
 
 const DeveloperToolPage = () => {
   return (
@@ -13,8 +12,9 @@ const DeveloperToolPage = () => {
     content="A comprehensive collection of free developer tools built by Saket Mishra. Featuring JSON formatters, CSS generators, API testers, and productivity utilities for modern web development."
   />
   </Helmet>
+
     <DeveloperToolHero/>
-    <ToolsSection/>
+    <ToolsPageLayout/>
     </>
   )
 }

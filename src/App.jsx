@@ -20,6 +20,7 @@ import UlidGenerator from "./components/developerTool/UlidGenerator";
 import EncryptDecryptTool from "./components/developerTool/EncryptDecryptTool"
 import BIP39Generator from "./components/developerTool/Bip39GeneratorTool";
 import PasswordStrengthAnalyzer from "./components/developerTool/PasswordStrengthAnalyzer";
+import PDFSignatureChecker from "./components/developerTool/PDFSignatureChecker";
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
             <Route path="/Tool/encryption" element={<EncryptDecryptTool/>}/>
             <Route path="/Tool/bip39-generator" element={<BIP39Generator/>}/>
             <Route path="/Tool/password-strength-analyser" element={<PasswordStrengthAnalyzer/>}/>
+            <Route path="/Tool/pdf-signature-checker" element={<PDFSignatureChecker/>}/>
             
           </Route>
           
