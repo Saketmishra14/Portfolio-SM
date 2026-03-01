@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-  Shuffle,  Lock, Fingerprint,EyeOff, 
+  Shuffle,Lock, Fingerprint,EyeOff, 
   SortAsc, ShieldCheck, List, Key ,FileUp
 } from 'lucide-react';
 import ToolLink from './ToolLink';
@@ -25,7 +25,7 @@ const ToolsSidebar = () => {
         
         {/* Header Section with Gradient */}
         <header className="relative flex flex-col items-center justify-center overflow-hidden px-6 py-10 text-center flex-shrink-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-white via-[#2266da] to-[#12747e] via-20% from-emerald-600 via-teal-700 to-slate-900 opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white via-[#2266d9] to-[#13757d] via-20% from-emerald-600 via-teal-700 to-slate-900 opacity-90" />
           <div className="absolute bottom-0 left-0 h-12 w-full bg-[#1a1a1a] opacity-20" style={{ clipPath: 'ellipse(70% 50% at 50% 100%)' }} />
           
           <div className="relative z-10">
