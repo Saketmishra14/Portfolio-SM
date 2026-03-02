@@ -10,14 +10,14 @@ const ToolsPageLayout = () => {
     
     {/* Left Side: Sidebar 
     */}
-    <div className="hidden md:flex h-full w-56  flex-shrink-0 bg-white dark:bg-[#18181b] backdrop-blur-sm">
+    <div className="hidden md:flex h-full w-50  flex-shrink-0 bg-white dark:bg-[#18181b] backdrop-blur-sm">
       <ToolsSidebar />
     </div>
 
   
 
     {/* Right Side: Main Content */}
-    <main className="flex-1 h-full overflow-y-auto
+    <main className="flex-1 h-full overflow-y-auto  overflow-y-auto
         [&::-webkit-scrollbar]:w-1 
         [&::-webkit-scrollbar-track]:bg-transparent 
         [&::-webkit-scrollbar-thumb]:bg-gray-300 

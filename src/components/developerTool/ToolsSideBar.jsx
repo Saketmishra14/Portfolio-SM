@@ -11,17 +11,19 @@ const ToolsSidebar = () => {
   const [isConverterOpen, setIsConverterOpen] = useState(true);
 
   return (
-    <div className="flex min-h-screen">
-      <aside 
-        className="flex flex-col hidden md:w-[300px] md:flex border-r border-gray-200 bg-white text-gray-800 transition-colors duration-300 dark:border-gray-800 dark:bg-[#18181b] dark:text-gray-200
-        /* 2. Scrollbar Customization: Transparent background and a small thin line thumb */
-        overflow-y-auto
-        [&::-webkit-scrollbar]:w-1 
-        [&::-webkit-scrollbar-track]:bg-transparent 
-        [&::-webkit-scrollbar-thumb]:bg-gray-300 
-        dark:[&::-webkit-scrollbar-thumb]:bg-gray-700 
-        [&::-webkit-scrollbar-thumb]:rounded-full"
-      >
+    <div className="">
+      <aside
+  className="hidden md:flex md:w-[300px] flex-col
+  border-r border-gray-200 bg-white text-gray-800
+  transition-colors duration-300
+  dark:border-gray-800 dark:bg-[#18181b] dark:text-gray-200
+  h-screen sticky top-0 overflow-y-auto
+  [&::-webkit-scrollbar]:w-1
+  [&::-webkit-scrollbar-track]:bg-transparent
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-thumb]:bg-gray-700
+  [&::-webkit-scrollbar-thumb]:rounded-full"
+>
         
         {/* Header Section with Gradient */}
         <header className="relative flex flex-col items-center justify-center overflow-hidden px-6 py-10 text-center flex-shrink-0">
