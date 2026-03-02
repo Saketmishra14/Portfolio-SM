@@ -11,9 +11,9 @@ const ToolsSidebar = () => {
   const [isConverterOpen, setIsConverterOpen] = useState(true);
 
   return (
-    <div className="flex h-screen">
+    <div className="">
       <aside 
-        className="flex flex-col h-screen w-full max-w-[300px] border-r border-gray-200 bg-white text-gray-800 transition-colors duration-300 dark:border-gray-800 dark:bg-[#18181b] dark:text-gray-200
+        className="flex flex-col h-screen w-[300px] shrink-0 border-r border-gray-200 bg-white text-gray-800 transition-colors duration-300 dark:border-gray-800 dark:bg-[#18181b] dark:text-gray-200
         /* 2. Scrollbar Customization: Transparent background and a small thin line thumb */
         overflow-y-auto
         [&::-webkit-scrollbar]:w-1 
@@ -25,7 +25,7 @@ const ToolsSidebar = () => {
         
         {/* Header Section with Gradient */}
         <header className="relative flex flex-col items-center justify-center overflow-hidden px-6 py-10 text-center flex-shrink-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-white via-[#2266d9] to-[#13757d] via-20% from-emerald-600 via-teal-700 to-slate-900 opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white via-[#2266d9] to-[#13757d] via-20% from-emerald-600  opacity-90" />
           <div className="absolute bottom-0 left-0 h-12 w-full bg-[#1a1a1a] opacity-20" style={{ clipPath: 'ellipse(70% 50% at 50% 100%)' }} />
           
           <div className="relative z-10">
@@ -42,7 +42,7 @@ const ToolsSidebar = () => {
         <nav className="flex-1 px-4 py-6" aria-label="Tool Categories">
           
           {/* Crypto Category */}
-          <div className="mb-8">
+          <div className="mb-4">
             <button 
               onClick={() => setIsCryptoOpen(!isCryptoOpen)}
               className="flex w-full items-center gap-2 px-2 py-1 text-sm font-semibold tracking-wide text-gray-500 uppercase transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"

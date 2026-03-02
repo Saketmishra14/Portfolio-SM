@@ -26,14 +26,28 @@ const HeroSection = () => {
   </div>
 
   {/* Right Side: Image */}
-  <div className="flex-[0.5] relative h-64 lg:h-full">
-    <img
-      src={toolHeroImg}
-      alt="Binary numbers banner"
-      className="w-full h-full object-cover"
-      loading="eager"
-    />
-  </div>
+  <div className="flex-[0.5] relative 
+  h-40 
+  sm:h-56 
+  md:h-72 
+  lg:h-full 
+  w-full 
+  flex items-center justify-center
+">
+  <img
+    src={toolHeroImg}
+    alt="Binary numbers banner"
+    className="
+      w-full 
+      h-full 
+      object-contain 
+      sm:object-contain 
+      md:object-cover 
+      lg:object-cover 
+    "
+    loading="eager"
+  />
+</div>
 </div>
   )
 }
