@@ -11,9 +11,9 @@ const ToolsSidebar = () => {
   const [isConverterOpen, setIsConverterOpen] = useState(true);
 
   return (
-    <div className="">
+    <div className="flex min-h-screen">
       <aside 
-        className="flex flex-col h-screen w-[300px] shrink-0 border-r border-gray-200 bg-white text-gray-800 transition-colors duration-300 dark:border-gray-800 dark:bg-[#18181b] dark:text-gray-200
+        className="flex flex-col hidden md:w-[300px] md:flex border-r border-gray-200 bg-white text-gray-800 transition-colors duration-300 dark:border-gray-800 dark:bg-[#18181b] dark:text-gray-200
         /* 2. Scrollbar Customization: Transparent background and a small thin line thumb */
         overflow-y-auto
         [&::-webkit-scrollbar]:w-1 
