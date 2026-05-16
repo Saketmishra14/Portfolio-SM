@@ -6,11 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./styles/BlinkEffect.css";
 import TypingEffect from "./TypingEffect";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
-  const navigate = useNavigate();
-
   const profileRef = useRef(null);
 
   useEffect(() => {
@@ -25,26 +23,21 @@ const HeroSection = () => {
     const profileDiv = profile.getBoundingClientRect();
     const breakpointX = profileDiv.x + profile.width / 2;
     const breakpointY = profileDiv.top + profile.height / 2;
-    console.log(breakpointX, breakpointY);
 
     const mouseMoveController = (e) => {
       const x = e.clientX;
       const y = e.clientY;
 
       if (x > breakpointX && y < breakpointY) {
-        console.log("top right");
         profile.style.transform =
           "perspective(1000px) rotateX(-15deg) rotateY(-15deg)";
       } else if (x > breakpointX && y > breakpointY) {
-        console.log("down right");
         profile.style.transform =
           "perspective(1000px) rotateX(15deg) rotateY(-15deg)";
       } else if (x < breakpointX && y < breakpointY) {
-        console.log("top left");
         profile.style.transform =
           "perspective(1000px) rotateX(-15deg) rotateY(15deg)";
       } else if (x < breakpointX && y > breakpointY) {
-        console.log("down left");
         profile.style.transform =
           "perspective(1000px) rotateX(15deg) rotateY(15deg)";
       }
@@ -72,7 +65,10 @@ const HeroSection = () => {
           <p className="lg:text-5xl text-2xl font-bold font-poppins leading-tight">
             Hello <span className="lg:text-4xl">👋</span>,<br /> I'm a{" "}
             <TypingEffect />
-            <div className="h-8 w-1 bg-yellow-300 inline-block mx-3 blinkit"></div>
+            <span
+              aria-hidden="true"
+              className="mx-3 inline-block h-8 w-1 blinkit bg-yellow-300 align-middle"
+            />
             , Technical Writer
           </p>
         </div>
@@ -130,7 +126,6 @@ const HeroSection = () => {
         <img
           ref={profileRef}
           src={heroImage2}
-          rel="preload"
           alt="Saket Mishra Mern-Developer profile"
           className="col-start-1 row-start-1  h-96 lg:h-[500px] rounded-full transition-transform duration-300"
         />

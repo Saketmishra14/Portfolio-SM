@@ -61,8 +61,8 @@ const Preloader = () => {
         aria-hidden="true"
       />
       
-      {/* Cursor + small styling inside JSX (works in React) */}
-      <style jsx>{`
+      {/* Cursor styling */}
+      <style>{`
         .typewriter {
           display: inline-block;
           white-space: pre; /* preserve spaces */

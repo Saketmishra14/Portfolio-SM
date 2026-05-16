@@ -14,7 +14,7 @@ const experiences = [
     role: "Software Engineer",
     type: "Intern",
     location: "Remote",
-    startDate: "14/12/2025",
+    startDate: "13/09/2025",
     endDate: undefined,
     current: true,
     description:
@@ -29,27 +29,27 @@ const experiences = [
       "nodejs"
     ],
   },
-  {
-    id: "2",
-    company: "Dial For Web LLC",
-    role: "Web Development/IT",
-    type: "Intern",
-    location: "Remote",
-    startDate: "13/09/2025",
-    endDate: "13/12/2025",
-    current: false,
-    description:
-      "I will be actively involved in live projects, guided assignments,and collaborative activities.",
-    techStack: [
-      "reactjs",
-      "Expressjs",
-      "tailwindcss",
-      "redux",
-      "html5",
-      "css3",
-      "javascript",
-    ],
-  },
+  // {
+  //   id: "2",
+  //   company: "Dial For Web LLC",
+  //   role: "Web Development/IT",
+  //   type: "Intern",
+  //   location: "Remote",
+  //   startDate: "13/09/2025",
+  //   endDate: "13/12/2025",
+  //   current: false,
+  //   description:
+  //     "I will be actively involved in live projects, guided assignments,and collaborative activities.",
+  //   techStack: [
+  //     "reactjs",
+  //     "Expressjs",
+  //     "tailwindcss",
+  //     "redux",
+  //     "html5",
+  //     "css3",
+  //     "javascript",
+  //   ],
+  // },
   {
     id: "1",
     company: "VG IT Solutions",

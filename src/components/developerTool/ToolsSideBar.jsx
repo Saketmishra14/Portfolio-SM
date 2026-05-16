@@ -87,7 +87,6 @@ const ToolsSidebar = () => {
             
             {isConverterOpen && (
               <ul className="mt-2 space-y-1 border-l border-gray-100 ml-3 dark:border-gray-800 animate-in fade-in duration-300">
-                <ToolLink icon="📅" label="Date-time converter" />
               </ul>
             )}
           </div>

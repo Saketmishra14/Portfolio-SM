@@ -8,7 +8,7 @@ import SocialPostsSection from "../components/SocialPostsSection";
 import ExperienceNew from "../components/ExperienceNew";
 import Preloader from "../components/Preloader";
 import { useState,useEffect } from "react";
-import BlogSection from '../components/BlogSection';
+import { TestimonialsSection } from '../components/testimonials/TestimonialsSection';
 
 const HomePage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -41,16 +41,14 @@ const HomePage = () => {
 
       <SkillSection />
 
-      <BlogSection/>
 
       <SocialPostsSection />
+      <TestimonialsSection/>
 
       <EventSection />
 
         </>
       )};
-
-      
     </>
   );
 };
