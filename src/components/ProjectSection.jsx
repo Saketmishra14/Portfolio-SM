@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard";
 import mannylandscaping from "../assets/projectCovers/Manny'slandscaping.png";
 import codeFrameCover from "../assets/codeframe-banner.png";
 import linkMeetCover from '../assets/linkmeet-banner.png'
+import sovonicsImg from '../assets/sovonics_img.png'
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -53,9 +54,18 @@ const ProjectSection = () => {
           <ArrowRightRounded fontSize="large" />
         </div>
         <div
-          className="px-5 py-7 flex justify-start lg:justify-center overflow-x-scroll no-scrollbar"
+          className="px-5 py-7 flex justify-start  overflow-x-scroll no-scrollbar"
           ref={projectContainer}
         >
+          <ProjectCard
+          imgUrl={sovonicsImg}
+          title="Sovonics India Corporate Website"
+          desp="A modern, high-performance corporate website developed for Sovonics India using Next.js. Built with responsive UI, optimized SEO structure, and fast server-side rendering to improve brand visibility and user engagement."
+            sourceLink="https://www.sovonicsindia.com/" 
+          techStacks={["nextjs", "tailwindcss", "javascript", "vercel"]}
+          status={"completed"}
+          liveLink="https://www.sovonicsindia.com/"
+          />
           <ProjectCard
             imgUrl={mannylandscaping}
             title="Manny Landscaping Services Website"

@@ -119,9 +119,7 @@ export function TestimonialCard({ testimonial }) {
       </div>
 
       <blockquote className="relative flex-1">
-        <span className="select-none font-serif text-3xl leading-none text-blue-300 dark:text-blue-900">
-          &ldquo;
-        </span>
+        
         <p className="-mt-1 text-sm leading-relaxed text-gray-700 dark:text-slate-300">
           {reviewMessage}
         </p>

@@ -27,7 +27,7 @@ const SkillSection = () => {
             { skill: "materialui", level: "70%", label:"Material UI" },
             // { skill: "styled-components", level: "80%", label:"Styled Components" },
             { skill: "redux", level: "55%", label:"Redux" },
-            { skill: "bootstrap", level: "65%", label:"Bootstrap" },
+            {skill:"nextjs",level:"90%",label:"NextJs"},
           ]}
         />
         <SkillBox
@@ -50,6 +50,7 @@ const SkillSection = () => {
           skills={[
             { skill: "c", level: "85%", label:"C" },
             { skill: "cpp", level: "90%", label:"C++" },
+            { skill: "python", level: "90%", label:"Python" },
           ]}
         />
 
