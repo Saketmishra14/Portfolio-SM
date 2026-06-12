@@ -31,9 +31,9 @@ const ToolsSidebar = () => {
           <div className="absolute bottom-0 left-0 h-12 w-full bg-[#1a1a1a] opacity-20" style={{ clipPath: 'ellipse(70% 50% at 50% 100%)' }} />
           
           <div className="relative z-10">
-            <h1 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+            <p className="text-3xl font-bold tracking-tight text-white md:text-4xl">
               TOOLSKIT
-            </h1>
+            </p>
             <p className="mt-2 text-sm font-medium text-emerald-50 opacity-90">
               Handy tools for developers
             </p>

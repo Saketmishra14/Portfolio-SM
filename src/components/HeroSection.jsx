@@ -1,4 +1,4 @@
-import { GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import heroImage2 from "../assets/heroImage-2.webp";
 import { useEffect, useRef } from "react";
 import { SiSalesforce } from "react-icons/si";
@@ -62,21 +62,21 @@ const HeroSection = () => {
       <div className="md:w-1/3 w-3/4" data-aos="slide-right">
         {/* big text */}
         <div className=" bg-blue-300 p-5 rounded-md">
-          <p className="lg:text-5xl text-2xl font-bold font-poppins leading-tight">
-            Hello <span className="lg:text-4xl">👋</span>,<br /> I'm a{" "}
+          <h1 className="lg:text-5xl text-2xl font-bold font-poppins leading-tight">
+            Hello <span className="lg:text-4xl">👋</span>,<br /> I&apos;m a{" "}
             <TypingEffect />
             <span
               aria-hidden="true"
               className="mx-3 inline-block h-8 w-1 blinkit bg-yellow-300 align-middle"
             />
             , Technical Writer
-          </p>
+          </h1>
         </div>
 
         {/* small text */}
         <div className="py-4">
           <p className="font-poppins text-sm font-thin lg:text-lg dark:text-white">
-            Welcome to my Portfolio! I’m Saket Mishra, a developer who loves turning imagination into experiences that people can truly connect with.
+            Welcome to my Portfolio! I&apos;m Saket Mishra, a developer who loves turning imagination into experiences that people can truly connect with.
           </p>
         </div>
 
@@ -85,6 +85,7 @@ const HeroSection = () => {
           <a
             href="https://github.com/Saketmishra14"
             target="_blank"
+            rel="noopener noreferrer"
             title="Github"
           >
             <GitHub fontSize="large" className="bg-white rounded-full" />
@@ -92,6 +93,7 @@ const HeroSection = () => {
           <a
             href="https://www.linkedin.com/in/saketmishra14/"
             target="_blank"
+            rel="noopener noreferrer"
             title="Linkedin"
           >
             <LinkedIn fontSize="large" className="text-blue-600" />
@@ -100,6 +102,7 @@ const HeroSection = () => {
           <a
             href="https://www.instagram.com/mishrasaket_14/"
             target="_blank"
+            rel="noopener noreferrer"
             title="Instagram"
           >
             <Instagram fontSize="large" className="text-pink-600" />
@@ -107,6 +110,7 @@ const HeroSection = () => {
           <a
             href="https://www.salesforce.com/trailblazer/saketmishra14"
             target="_blank"
+            rel="noopener noreferrer"
             title="Salesforce"
           >
             <SiSalesforce size={36} color="#00A1E0" />
@@ -126,7 +130,9 @@ const HeroSection = () => {
         <img
           ref={profileRef}
           src={heroImage2}
-          alt="Saket Mishra Mern-Developer profile"
+          alt="Saket Mishra FullStack-Developer profile"
+          fetchPriority="high"
+          decoding="async"
           className="col-start-1 row-start-1  h-96 lg:h-[500px] rounded-full transition-transform duration-300"
         />
       </div>

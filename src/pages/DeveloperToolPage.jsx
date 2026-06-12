@@ -1,17 +1,15 @@
 import DeveloperToolHero from '../components/developerTool/HeroSection'
-import { Helmet } from "react-helmet";
 import ToolsPageLayout from '../components/developerTool/ToolsPageLayout';
+import SEO from "../components/SEO";
 
 const DeveloperToolPage = () => {
   return (
     <>
-    <Helmet>
-  <title>Saket Mishra :Developer Tools & Utilities</title>
-  <meta
-    name="description"
-    content="A comprehensive collection of free developer tools built by Saket Mishra. Featuring JSON formatters, CSS generators, API testers, and productivity utilities for modern web development."
-  />
-  </Helmet>
+    <SEO
+      title="Developer Tools & Utilities | Saket Mishra"
+      description="Use free developer tools built by Saket Mishra, including token generators, hash utilities, encryption tools, UUID and ULID generators, bcrypt utilities, and PDF signature checks."
+      path="/tool"
+    />
 
     <DeveloperToolHero/>
     <ToolsPageLayout/>

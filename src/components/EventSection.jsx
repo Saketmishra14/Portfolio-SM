@@ -19,9 +19,9 @@ const EventSection = () => {
         />
 
         <div className="flex justify-center items-center mt-7">
-          <h1 className="lg:text-3xl text-xl font-light dark:text-white">
+          <h2 className="lg:text-3xl text-xl font-light dark:text-white">
             Happy Coding
-          </h1>
+          </h2>
           <SportsBar fontSize="large" className="dark:text-white ml-3" />
         </div>
       </div>

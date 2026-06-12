@@ -1,6 +1,6 @@
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-
 import { useState } from "react";
+import SEO, { createProjectListSchema, projectBanner } from "../components/SEO";
 
 const Accordion = ({ title, projects }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,135 +71,64 @@ const projectsData = [
     domain: "Web Development",
     projects: [
       {
-        title: "Project 1",
-        link: "https://project1.com",
-        source: "https://github.com/project1",
-        stack: ["React.js", "Node.js"],
+        title: "Sovonics India Private Limited",
+        link: "https://www.sovonicsindia.com/",
+        source: "https://www.sovonicsindia.com/",
+        stack: ["Next.js", "Tailwind CSS", "JavaScript", "Vercel"],
       },
       {
-        title: "Project 2",
-        link: "https://project2.com",
-        source: "https://github.com/project2",
-        stack: [],
+        title: "Manny Landscaping Services",
+        link: "https://saketmishra14.github.io/mannylandscaping-final",
+        source: "https://github.com/Saketmishra14/mannylandscaping-final",
+        stack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       },
       {
-        title: "Project 3",
-        link: "https://project3.com",
-        source: "https://github.com/project3",
-        stack: [],
-      },
-    ],
-  },
-  {
-    domain: "App Development",
-    projects: [
-      {
-        title: "Project 1",
-        link: "https://project1.com",
-        source: "https://github.com/project1",
-        stack: ["React Native", "Node.js"],
+        title: "Code Image Generator",
+        link: "https://saketmishra14.github.io/Code-Frame",
+        source: "https://github.com/Saketmishra14/Code-Frame",
+        stack: ["HTML", "CSS", "JavaScript"],
       },
       {
-        title: "Project 2",
-        link: "https://project2.com",
-        source: "https://github.com/project2",
-        stack: [],
-      },
-      {
-        title: "Project 3",
-        link: "https://project3.com",
-        source: "https://github.com/project3",
-        stack: [],
-      },
-    ],
-  },
-  {
-    domain: "AI/ML",
-    projects: [
-      {
-        title: "Project 1",
-        link: "https://project1.com",
-        source: "https://github.com/project1",
-        stack: ["React.js", "Node.js"],
-      },
-      {
-        title: "Project 2",
-        link: "https://project2.com",
-        source: "https://github.com/project2",
-        stack: [],
-      },
-      {
-        title: "Project 3",
-        link: "https://project3.com",
-        source: "https://github.com/project3",
-        stack: [],
-      },
-    ],
-  },
-  {
-    domain: "Web 3.0",
-    projects: [
-      {
-        title: "Project 1",
-        link: "https://project1.com",
-        source: "https://github.com/project1",
-        stack: ["React.js", "Node.js"],
-      },
-      {
-        title: "Project 2",
-        link: "https://project2.com",
-        source: "https://github.com/project2",
-        stack: [],
-      },
-      {
-        title: "Project 3",
-        link: "https://project3.com",
-        source: "https://github.com/project3",
-        stack: [],
-      },
-    ],
-  },
-  {
-    domain: "Other",
-    projects: [
-      {
-        title: "Project 1",
-        link: "https://project1.com",
-        source: "https://github.com/project1",
-        stack: ["React.js", "Node.js"],
-      },
-      {
-        title: "Project 2",
-        link: "https://project2.com",
-        source: "https://github.com/project2",
-        stack: [],
-      },
-      {
-        title: "Project 3",
-        link: "https://project3.com",
-        source: "https://github.com/project3",
-        stack: [],
+        title: "Link_Meet",
+        link: "https://linkmeet-ymkj.onrender.com",
+        source: "https://github.com/Saketmishra14/Link_Meet",
+        stack: ["React.js", "Express.js", "MongoDB", "JavaScript"],
       },
     ],
   },
 ];
 
 const ProjectsPage = () => {
-  return ( <div className="w-full h-screen flex justify-center">
-      <Helmet>
-        <title>Saket Mishra: Not Found</title>
-        <meta name="description" content="Not found page" />
-      </Helmet>
-      <div className="mt-10 flex flex-col justify-center items-center">
-        <h1 className="lg:text-4xl text-xl">Page Not Found</h1>
-        <button
-          onClick={() => navigate("/")}
-          className="font-poppins bg-blue-500 text-gray-100 py-2 px-3 font-semibold rounded-full text-xs mt-6"
-        >
-          Back to Home
-        </button>
+  const allProjects = projectsData.flatMap((group) => group.projects);
+
+  return (
+    <main className="w-full min-h-screen px-4 py-10 sm:px-8">
+      <SEO
+        title="Projects | Saket Mishra"
+        description="Browse Saket Mishra's web development projects, including client websites, developer tools, code utilities, and full-stack React and MERN stack applications."
+        path="/projects"
+        image={projectBanner}
+        schema={[createProjectListSchema(allProjects)]}
+      />
+      <div className="mx-auto flex w-full max-w-5xl flex-col items-center">
+        <h1 className="text-center text-2xl font-semibold text-neutral-900 sm:text-4xl">
+          Saket Mishra Projects
+        </h1>
+        <p className="mt-4 max-w-2xl text-center text-sm text-neutral-600 sm:text-base">
+          Selected frontend, full-stack, and client website work built with modern web technologies.
+        </p>
+        <div className="mt-10 w-full">
+          {projectsData.map((projectGroup) => (
+            <Accordion
+              key={projectGroup.domain}
+              title={projectGroup.domain}
+              projects={projectGroup.projects}
+            />
+          ))}
+        </div>
       </div>
-    </div>  );
+    </main>
+  );
 };
 
 export default ProjectsPage;

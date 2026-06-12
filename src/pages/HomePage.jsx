@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import EventSection from "../components/EventSection";
 import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
@@ -9,6 +8,7 @@ import ExperienceNew from "../components/ExperienceNew";
 import Preloader from "../components/Preloader";
 import { useState,useEffect } from "react";
 import { TestimonialsSection } from '../components/testimonials/TestimonialsSection';
+import SEO from "../components/SEO";
 
 const HomePage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -21,13 +21,11 @@ const HomePage = () => {
    },[]);
   return (
     <>
-      <Helmet>
-       <title>Saket Mishra</title>
-        <meta
-          name="description"
-          content="The portfolio of Saket Mishra. Where I showed my all relevent skills, experiances, blogs, videos and all the other stuffs of me as a developer"
-        />
-      </Helmet>
+      <SEO
+        title="Saket Mishra - Software Engineer & Salesforce"
+        description="Explore Saket Mishra's portfolio, projects, Freelancer, skills, technical blogs, developer tools, and professional experience in React, MERN stack development, Salesforce, and modern web engineering."
+        path="/"
+      />
 
       {isLoading?(<Preloader/>) :(
         <>

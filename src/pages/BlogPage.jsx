@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/blogpage/HeroSection';
 import LatestBlog from '../components/blogpage/LatestBlog';
-import { Helmet } from "react-helmet";
+import SEO from "../components/SEO";
 
 
 const BlogPage = () => {
@@ -11,18 +11,14 @@ const BlogPage = () => {
     
         <>
  {/* Meta data of the blog page */}
-      <Helmet>
-        <title>Saket Mishra: Blogs</title>
-        <meta
-          name="description"
-          content="All the technical blogs written by Saket Mishra. On the topics like Web Dev, Mobile Dev, Backend, Docker, Kubernetes, GitHub, Salesforce,Cloud as well as Daily Tech news etc"
-        />
-      </Helmet>
+      <SEO
+        title="Technical Blogs | Saket Mishra"
+        description="Read technical blogs by Saket Mishra on web development, backend engineering, GitHub, Salesforce, cloud technologies, and developer productivity."
+        path="/blog"
+      />
 
         <HeroSection/>
-        {/* <SearchBlog/> */}
         <LatestBlog/>
-        {/* <MoreBlog/> */}
 
         </>
   );

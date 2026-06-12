@@ -1,14 +1,16 @@
-import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
+import SEO from "../components/SEO";
 
 const NotFound = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full h-screen flex justify-center">
-      <Helmet>
-        <title>Saket Mishra: Not Found</title>
-        <meta name="description" content="Not found page" />
-      </Helmet>
+      <SEO
+        title="Page Not Found | Saket Mishra"
+        description="The requested page could not be found on Saket Mishra's portfolio."
+        path="/404"
+        noindex
+      />
       <div className="mt-10 flex flex-col justify-center items-center">
         <h1 className="lg:text-4xl text-xl">Page Not Found</h1>
         <button

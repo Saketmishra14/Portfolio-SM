@@ -7,7 +7,6 @@ const ProjectCard = ({
   imgUrl,
   title,
   desp,
-  sourceLink,
   techStacks,
   status,
   liveLink,
@@ -28,9 +27,10 @@ const ProjectCard = ({
       <div className=" w-full ">
         <img
           src={imgUrl}
-          alt="mannylandscaping website"
+          alt={`${title} project preview`}
           className="rounded-t-md border-b border-gray-200 dark:border-gray-700 lg:h-44 w-full h-20 object-cover"
           loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -51,15 +51,10 @@ const ProjectCard = ({
           ))}
         </div>
 
-        <div className="flex flex-row items-center justify-around lg:mt-4 mt-2">
-          <a href={sourceLink} target="_blank" title={title}>
-            <div className=" bg-blue-500 text-gray-100 py-2 px-7 rounded-full text-xs">
-             Code View
-            </div>
-          </a>
-          <a href={liveLink} target="_blank" title={title}>
-            <div className=" bg-blue-500 text-gray-100 py-2 px-7 rounded-full text-xs">
-              Live view
+        <div className="flex flex-row items-center justify-center lg:mt-4 mt-2">
+          <a href={liveLink} target="_blank" rel="noopener noreferrer" title={title}>
+            <div className="bg-blue-500 text-gray-100 py-2 px-7 rounded-full text-xs">
+              Live View
             </div>
           </a>
         </div>

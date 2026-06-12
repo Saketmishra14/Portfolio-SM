@@ -7,19 +7,19 @@ const Footer = () => {
             Socials
           </p>
           <div className="flex flex-col sm:items-baseline items-center space-y-1 text-blue-500 hover:[&>a]:text-blue-400 lg:text-base text-xs">
-            <a href="https://github.com/Saketmishra14" target="_blank">
+            <a href="https://github.com/Saketmishra14" target="_blank" rel="noopener noreferrer">
               Github
             </a>
-            <a href="https://www.instagram.com/mishrasaket_14/" target="_blank">
+            <a href="https://www.instagram.com/mishrasaket_14/" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
-            <a href="https://www.linkedin.com/in/saketmishra14" target="_blank">
+            <a href="https://www.linkedin.com/in/saketmishra14" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a href="https://yashmishra.hashnode.dev/" target="_blank">
+            <a href="https://yashmishra.hashnode.dev/" target="_blank" rel="noopener noreferrer">
               Hashnode
             </a>
-            <a href="https://www.youtube.com/@yash4two" target="_blank">
+            <a href="https://www.youtube.com/@yash4two" target="_blank" rel="noopener noreferrer">
               Youtube
             </a>
           </div>
@@ -36,18 +36,21 @@ const Footer = () => {
             <a
               href="https://codewithme14.hashnode.dev/problem-solving-think-apply-and-build"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Problem Solving
             </a>
             <a
               href="https://yashmishra.hashnode.dev/touch-typing-learn-to-type-faster"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Touch Typing
             </a>
             <a
               href="https://yashmishra.hashnode.dev/git-and-github-introduction"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Git and GitHub: Introduction
             </a>

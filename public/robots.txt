@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-sm-nine.vercel.app/sitemap.xml
+Sitemap: https://saketmishra.in/sitemap.xml

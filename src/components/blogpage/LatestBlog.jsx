@@ -84,9 +84,9 @@ const LatestBlog = () => {
          {blogs[0]?.node.views}  Views
         </p>
 
-        <h1 className="mt-1 text-base sm:text-xl lg:text-2xl font-medium">
+        <h2 className="mt-1 text-base sm:text-xl lg:text-2xl font-medium">
          {blogs[0]?.node.title}
-        </h1>
+        </h2>
 
         <p className="mt-2 text-xs sm:text-sm lg:text-base font-light text-gray-700 dark:text-gray-300">
           {blogs[0]?.node.brief}
@@ -138,9 +138,9 @@ const LatestBlog = () => {
             <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                {blogs[value]?.node.views}  Views
               </p>
-            <h1 className="text-sm sm:text-base md:text-lg font-bold line-clamp-2">
+            <h2 className="text-sm sm:text-base md:text-lg font-bold line-clamp-2">
               {blogs[value]?.node.title}
-            </h1>
+            </h2>
 
             <p className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400 line-clamp-3">
               {blogs[value]?.node.brief}

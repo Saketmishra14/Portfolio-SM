@@ -8,15 +8,34 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const experiences = [
+  {
+  id: "3",
+  company: "MTX IT Consulting Services Private Limited",
+  role: "Salesforce Intern",
+  type: "Intern",
+  location: "Remote",
+  startDate: "21/05/2026",
+  endDate: "08/07/2026",
+  current: true,
+  description:
+    "Undergoing structured Salesforce training while gaining hands-on experience in CRM solutions, cloud technologies, and modern web development practices. Collaborating on assignments and projects involving Salesforce and frontend development technologies.",
+  techStack: [
+    "salesforce",
+    "nextjs",
+    "reactjs",
+    "tailwindcss",
+    "javascript",
+  ],
+},
  {
-    id: "3",
+    id: "2",
     company: "Dial For Web LLC",
     role: "Software Engineer",
     type: "Intern",
     location: "Remote",
     startDate: "13/09/2025",
-    endDate: undefined,
-    current: true,
+    endDate: "02/03/2026",
+    current: false,
     description:
       "I am committed to mastering new frameworks through live project execution, mentorship-led assignments, and active knowledge-sharing within collaborative ecosystems.",
     techStack: [
@@ -29,27 +48,7 @@ const experiences = [
       "nodejs"
     ],
   },
-  // {
-  //   id: "2",
-  //   company: "Dial For Web LLC",
-  //   role: "Web Development/IT",
-  //   type: "Intern",
-  //   location: "Remote",
-  //   startDate: "13/09/2025",
-  //   endDate: "13/12/2025",
-  //   current: false,
-  //   description:
-  //     "I will be actively involved in live projects, guided assignments,and collaborative activities.",
-  //   techStack: [
-  //     "reactjs",
-  //     "Expressjs",
-  //     "tailwindcss",
-  //     "redux",
-  //     "html5",
-  //     "css3",
-  //     "javascript",
-  //   ],
-  // },
+ 
   {
     id: "1",
     company: "VG IT Solutions",

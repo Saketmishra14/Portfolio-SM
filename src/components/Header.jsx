@@ -56,6 +56,7 @@ const Header = ({ setDark, currentMode }) => {
         <a
           href="https://mail.google.com/mail/u/0/?fs=1&to=mishrasaket042@gmail.com&tf=cm"
           target="_blank"
+          rel="noopener noreferrer"
           className="font-poppins bg-blue-600 text-gray-100 py-2 px-3 font-semibold rounded-full sm:text-sm text-xs"
         >
           Connect

@@ -59,18 +59,16 @@ const ProjectSection = () => {
         >
           <ProjectCard
           imgUrl={sovonicsImg}
-          title="Sovonics India Corporate Website"
+          title="Sovonics India Private Limited"
           desp="A modern, high-performance corporate website developed for Sovonics India using Next.js. Built with responsive UI, optimized SEO structure, and fast server-side rendering to improve brand visibility and user engagement."
-            sourceLink="https://www.sovonicsindia.com/" 
           techStacks={["nextjs", "tailwindcss", "javascript", "vercel"]}
           status={"completed"}
           liveLink="https://www.sovonicsindia.com/"
           />
           <ProjectCard
             imgUrl={mannylandscaping}
-            title="Manny Landscaping Services Website"
+            title="Manny Landscaping Services"
             desp="A fully responsive, real-world client website developed for Manny Landscaping to showcase services, portfolio, and contact details. Designed with a professional, user-friendly interface to enhance the company’s online presence"
-            sourceLink="https://github.com/Saketmishra14/mannylandscaping-final"
             techStacks={[ "html5","css3","javascript","bootstrap"]}
             status={"completed"}
             liveLink="https://saketmishra14.github.io/mannylandscaping-final"
@@ -80,7 +78,6 @@ const ProjectSection = () => {
             imgUrl={codeFrameCover}
             title="Code Image Genrator"
             desp="CodeFrame is a code to image generator app. You just have to give the code and you will get an customizable image in return."
-            sourceLink="https://github.com/Saketmishra14/Code-Frame"
             techStacks={["html5", "css3", "javascript"]}
             status={"Completed"}
             liveLink="https://saketmishra14.github.io/Code-Frame"
@@ -89,7 +86,6 @@ const ProjectSection = () => {
             imgUrl={linkMeetCover}
             title="Link_Meet"
             desp="Link-Meet is a real-time video conferencing web app inspired by Zoom, allowing users to join meetings via secure links with live video, audio, and chat using WebRTC and modern web technologies."
-            sourceLink="https://github.com/Saketmishra14/Link_Meet"
             techStacks={["css3", "javascript","express","mongodb","reactjs"]}
             status={"Completed"}
             liveLink="https://linkmeet-ymkj.onrender.com"
