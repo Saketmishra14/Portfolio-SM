@@ -16,7 +16,7 @@ export const brand = {
     "https://github.com/Saketmishra14",
     "https://www.linkedin.com/in/saketmishra14/",
     "https://www.instagram.com/mishrasaket_14/",
-    "https://www.salesforce.com/trailblazer/saketmishra14",
+    "https://www.salesforce.com/trailblazer/saketmishra14"
   ],
   knowsAbout: [
     "React.js",
@@ -64,7 +64,6 @@ const cleanSchema = (value) => {
 };
 
 const personSchema = {
-  "@context": "https://schema.org",
   "@type": "Person",
   "@id": `${SITE_URL}/#person`,
   name: brand.name,
@@ -78,7 +77,6 @@ const personSchema = {
 };
 
 const organizationSchema = {
-  "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
   name: brand.name,
@@ -89,20 +87,18 @@ const organizationSchema = {
 };
 
 const websiteSchema = {
-  "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${SITE_URL}/#website`,
   name: brand.siteName,
   url: SITE_URL,
   author: { "@id": `${SITE_URL}/#person` },
   publisher: { "@id": `${SITE_URL}/#organization` },
-    inLanguage: "en-US",
+  inLanguage: "en-US",
 
 };
 
 export const createProjectListSchema = (projects = []) =>
   cleanSchema({
-    "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${SITE_URL}/projects#projects`,
     name: "Saket Mishra Projects",
@@ -139,7 +135,6 @@ const SEO = ({
     organizationSchema,
     websiteSchema,
     {
-      "@context": "https://schema.org",
       "@type": "WebPage",
       "@id": `${canonicalUrl}#webpage`,
       name: normalizedTitle,
@@ -178,8 +173,12 @@ const SEO = ({
       <meta name="twitter:image" content={imageUrl} />
 
       <script type="application/ld+json">
-        {JSON.stringify(schemaList)}
-      </script>
+
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": schemaList
+        })}    
+          </script>
     </Helmet>
   );
 };
