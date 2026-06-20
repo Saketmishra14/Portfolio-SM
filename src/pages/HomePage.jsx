@@ -23,7 +23,7 @@ const HomePage = () => {
     <>
       <SEO
         title="Saket Mishra - Software Engineer & Salesforce"
-        description="Explore Saket Mishra's portfolio, projects, Freelancer, skills, technical blogs, developer tools, and professional experience in React, MERN stack development, Salesforce, and modern web engineering."
+        description="I am Saket Mishra, a Software Developer crafting high-performance web applications with React, MERN Stack, and Salesforce technologies. Explore my portfolio, innovative projects, technical insights, and continuous learning journey."
         path="/"
       />
 
