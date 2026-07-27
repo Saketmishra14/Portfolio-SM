@@ -10,7 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 import LayoutWithHeader from "./LayoutWithHeader";
 import { Toaster } from "react-hot-toast";
 import {  HelmetProvider } from 'react-helmet-async';
-import BlogPage from "./pages/BlogPage";
+import Certifications from "./pages/Certifications";
 import DeveloperToolPage from "./pages/DeveloperToolPage";
 import TokenGenerator from "./components/developerTool/TokenGenerator";
 import HashTextTool from "./components/developerTool/HashTextTool";
@@ -65,7 +65,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/blog" element={<BlogPage/>}/>
+            <Route path="/certifications" element={<Certifications/>}/>
             <Route path="/tool" element={<DeveloperToolPage/>}/>
             <Route path="/tool/token-generator" element={<><SEO title="Token Generator | Saket Mishra" description="Generate secure random tokens with Saket Mishra's free browser-based developer utility." path="/tool/token-generator" /><TokenGenerator/></>}/>
             <Route path="/tool/hash-text" element={<><SEO title="Hash Text Tool | Saket Mishra" description="Hash text with common algorithms using Saket Mishra's free developer utility." path="/tool/hash-text" /><HashTextTool/></>}/>

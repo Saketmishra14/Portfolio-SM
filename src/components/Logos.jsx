@@ -1,10 +1,13 @@
 import { SiSalesforce } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si"; 
+import { SiBootstrap } from "react-icons/si";
 import {
   SiGoogleanalytics,
   SiGooglesearchconsole,
 } from "react-icons/si";
-import { FaSearch, FaChartBar, FaLink,FaCog } from "react-icons/fa";
+import { FaSearch, FaChartBar, FaLink, FaCog } from "react-icons/fa";
+import { MdCloudQueue } from "react-icons/md";
+import { GiElectric } from "react-icons/gi";
+import { HiOutlineCode } from "react-icons/hi";
 
 
 const GetRequiredLogo = ({ logoName, size, color }) => {
@@ -17,31 +20,42 @@ const GetRequiredLogo = ({ logoName, size, color }) => {
         ></path>
       </svg>
     );
-  }else if(logoName==="Google Analytics"){
+  }
+  else if (logoName === "experience cloud") {
+    return <MdCloudQueue size={size} color={color || "#00A1E0"} />;
+  }
+  else if (logoName === "lwc") {
+    return <GiElectric size={size} color={color || "#FFC107"} />;
+  }
+  else if (logoName === "apex") {
+    return <HiOutlineCode size={size} color={color || "#E53935"} />;
+  }
+  else if (logoName === "Google Analytics") {
     return <SiGoogleanalytics size={size} color={color || "#F9AB00"} />;
   }
-  else if(logoName==="Google Search Console"){
+
+  else if (logoName === "Google Search Console") {
     return <SiGooglesearchconsole size={size} color={color || "#4285F4"} />
   }
-  else if(logoName==="SEO"){
-    return <FaSearch size={size} color={color || "#0ea5e9"}/>
+  else if (logoName === "SEO") {
+    return <FaSearch size={size} color={color || "#0ea5e9"} />
   }
-  else if(logoName==="Keyword Research"){
-    return <FaChartBar size={size} color={color ||"#22c55e"} />
+  else if (logoName === "Keyword Research") {
+    return <FaChartBar size={size} color={color || "#22c55e"} />
   }
-  else if(logoName==="On-page SEO"){
-    return <FaSearch size={size} color={color ||"#6366f1"}/>
+  else if (logoName === "On-page SEO") {
+    return <FaSearch size={size} color={color || "#6366f1"} />
   }
-  else if(logoName==="Off-page SEO") {
-    return <FaLink size={size} color={color ||"#8b5cf6"} />
+  else if (logoName === "Off-page SEO") {
+    return <FaLink size={size} color={color || "#8b5cf6"} />
   }
-  else if (logoName==="bootstrap" ){
-   return <SiBootstrap size={size} color={color || "#563d7c"} />;
+  else if (logoName === "bootstrap") {
+    return <SiBootstrap size={size} color={color || "#563d7c"} />;
   }
-  else if(logoName==="technical seo"){
-    return <FaCog size={size} color={color ||"#64748b" } />;
+  else if (logoName === "technical seo") {
+    return <FaCog size={size} color={color || "#64748b"} />;
   }
- else if (logoName === "sass") {
+  else if (logoName === "sass") {
     return (
       <svg viewBox="0 0 128 128" width={`${size}px`}>
         <path
@@ -81,7 +95,7 @@ const GetRequiredLogo = ({ logoName, size, color }) => {
         ></path>
       </svg>
     );
-  }else if (logoName==="salesforce"){
+  } else if (logoName === "salesforce") {
     return <SiSalesforce size={size} color={color || "#1796DF"} />;
   } else if (logoName === "typescript") {
     return (

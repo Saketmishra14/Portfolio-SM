@@ -8,6 +8,7 @@ import mannylandscaping from "../assets/projectCovers/Manny'slandscaping.png";
 import codeFrameCover from "../assets/codeframe-banner.png";
 import linkMeetCover from '../assets/linkmeet-banner.png'
 import sovonicsImg from '../assets/sovonics_img.png'
+import salesforceImg from '../assets/projectCovers/salesforce-exam-portal.png'
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -58,22 +59,30 @@ const ProjectSection = () => {
           ref={projectContainer}
         >
           <ProjectCard
-          imgUrl={sovonicsImg}
-          title="Sovonics India Private Limited"
-          desp="A modern, high-performance corporate website developed for Sovonics India using Next.js. Built with responsive UI, optimized SEO structure, and fast server-side rendering to improve brand visibility and user engagement."
-          techStacks={["nextjs", "tailwindcss", "javascript", "vercel"]}
-          status={"completed"}
-          liveLink="https://www.sovonicsindia.com/"
+            imgUrl={salesforceImg}
+            title="Salesforce Exam Portal"
+            desp="A scalable Salesforce Experience Cloud portal that enables guest users to register, access timed mock examinations, and receive instant results. Built using Lightning Web Components (LWC), Apex, and Experience Cloud with a secure, responsive interface and efficient question management."
+            techStacks={["salesforce", "experience cloud", "lwc", "apex"]}
+            status={"completed"}
+            liveLink="https://orgfarm-d642e76cf7-dev-ed.develop.my.site.com"
+          />
+          <ProjectCard
+            imgUrl={sovonicsImg}
+            title="Sovonics India Private Limited"
+            desp="A modern, high-performance corporate website developed for Sovonics India using Next.js. Built with responsive UI, optimized SEO structure, and fast server-side rendering to improve brand visibility and user engagement."
+            techStacks={["nextjs", "tailwindcss", "javascript", "vercel"]}
+            status={"completed"}
+            liveLink="https://www.sovonicsindia.com/"
           />
           <ProjectCard
             imgUrl={mannylandscaping}
             title="Manny Landscaping Services"
             desp="A fully responsive, real-world client website developed for Manny Landscaping to showcase services, portfolio, and contact details. Designed with a professional, user-friendly interface to enhance the company’s online presence"
-            techStacks={[ "html5","css3","javascript","bootstrap"]}
+            techStacks={["html5", "css3", "javascript", "bootstrap"]}
             status={"completed"}
             liveLink="https://saketmishra14.github.io/mannylandscaping-final"
           />
-          
+
           <ProjectCard
             imgUrl={codeFrameCover}
             title="Code Image Genrator"
@@ -86,7 +95,7 @@ const ProjectSection = () => {
             imgUrl={linkMeetCover}
             title="Link_Meet"
             desp="Link-Meet is a real-time video conferencing web app inspired by Zoom, allowing users to join meetings via secure links with live video, audio, and chat using WebRTC and modern web technologies."
-            techStacks={["css3", "javascript","express","mongodb","reactjs"]}
+            techStacks={["css3", "javascript", "express", "mongodb", "reactjs"]}
             status={"Completed"}
             liveLink="https://linkmeet-ymkj.onrender.com"
           />
