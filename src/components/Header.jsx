@@ -36,8 +36,8 @@ const Header = ({ setDark, currentMode }) => {
         <a href="/certifications" className=" hover:border-b border-blue-700">
           Certifications
         </a>
-         <Link to="/tool" className=" hover:border-b border-blue-700">
-         Tools
+         <Link to="https://www.youtube.com/@yash4two" className=" hover:border-b border-blue-700">
+         Youtube
         </Link>
       </div>
 

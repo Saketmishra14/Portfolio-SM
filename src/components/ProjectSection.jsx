@@ -9,6 +9,8 @@ import codeFrameCover from "../assets/codeframe-banner.png";
 import linkMeetCover from '../assets/linkmeet-banner.png'
 import sovonicsImg from '../assets/sovonics_img.png'
 import salesforceImg from '../assets/projectCovers/salesforce-exam-portal.png'
+import combatSportsAnalysisImg from '../assets/projectCovers/combatSportsAnalysisImg.png'
+import dialForWebImg from '../assets/projectCovers/dialForWebImg.png'
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -58,6 +60,23 @@ const ProjectSection = () => {
           className="px-5 py-7 flex justify-start  overflow-x-scroll no-scrollbar"
           ref={projectContainer}
         >
+          <ProjectCard
+            imgUrl={dialForWebImg}
+            title="Dial For Web"
+            desp="A modern, responsive web development company website built with Next.js and Tailwind CSS. The website delivers a professional user experience across devices, with optimized performance and a scalable architecture. Developed and deployed on AWS, with the project currently live on AWS and scheduled to go live on the official company domain."
+            techStacks={["nextjs", "tailwindcss", "aws"]}
+            status={"completed"}
+            liveLink="https://main.d24kctclx63s8o.amplifyapp.com/"
+          />
+
+          <ProjectCard
+            imgUrl={combatSportsAnalysisImg}
+            title="Combat Sports Analysis"
+            desp="A premium sports analytics platform for MMA, boxing, and kickboxing, built with Next.js and Tailwind CSS. The platform uses Sanity CMS for flexible content management and is designed with a modern, responsive sports analytics interface. Deployed on AWS for reliable and scalable performance."
+            techStacks={["nextjs", "tailwindcss", "sanity", "aws"]}
+            status={"completed"}
+            liveLink="https://www.combatsportsanalysis.com"
+          />
           <ProjectCard
             imgUrl={salesforceImg}
             title="Salesforce Exam Portal"

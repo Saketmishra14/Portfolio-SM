@@ -60,13 +60,14 @@ const SkillSection = () => {
           title="Cloud Skills"
           skills={[
             { skill: "salesforce", level: "40%", label:"SALESFORCE" },
+            { skill: "aws", level: "30%", label:"AWS" },
           ]}
         />
         <SkillBox
           title="DevOps Skills"
           skills={[
-            { skill: "git", level: "85%", label:"Git" },
-            { skill: "github", level: "85%", label:"Github & Github Actions" },
+            { skill: "git", level: "95%", label:"Git" },
+            { skill: "github", level: "95%", label:"Github & Github Actions" },
           ]}
         />
       </div>
