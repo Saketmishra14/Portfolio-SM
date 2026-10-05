@@ -9,8 +9,8 @@ import codeFrameCover from "../assets/codeframe-banner.png";
 import linkMeetCover from '../assets/linkmeet-banner.png'
 import sovonicsImg from '../assets/sovonics_img.png'
 import salesforceImg from '../assets/projectCovers/salesforce-exam-portal.png'
-import combatSportsAnalysisImg from '../assets/projectCovers/combatSportsAnalysisImg.png'
-import dialForWebImg from '../assets/projectCovers/dialForWebImg.png'
+import combatSportsAnalysisImg from '../assets/projectCovers/combatsportsanalysisImg.png'
+import dialForWebImg from '../assets/projectCovers/dialforwebImg.png'
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
